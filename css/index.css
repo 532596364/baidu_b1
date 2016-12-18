@@ -1,0 +1,426 @@
+/********************************主体部分**************************************/
+
+
+#main {
+    position: relative;
+    _position: ;
+  /*  min-height: 100%;*/       /****这里去了不影响******/    
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+}
+
+#head {
+    padding-bottom: 100px;
+    text-align: center;
+    *z-index: 1;
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+}
+
+#head .head_wrapper {
+    height: 100%;         /****这里去了在chrome中百度form消失**/
+}
+
+
+/*搜索部分*/
+.s_form {
+    position: relative;
+    top: 38.2%;
+}
+
+.s_form_wrapper {
+    position: relative;
+    top: -191px;
+}
+
+#lg img{
+    width: 270px;
+    height: 129px;
+}
+
+#form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+}
+
+/**input轮廓线**/
+.s_ipt_wr {
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 539px;
+    margin-right: 0;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+}
+.s_ipt_wr:hover{
+    border-color:#999 transparent #b3b3b3 #999;
+}
+
+#kw {
+    position: relative;
+}
+/**input**/
+.s_ipt {
+    width: 526px;
+    height: 22px;
+    font: 16px/18px arial;
+    line-height: 22px\9;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+/******icon**********/
+.icon{
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(../imgs/search.png) no-repeat;
+    background-image: -webkit-image-set(url(../imgs/search.png) 1x,url(../imgs/search_bak.png) 2x);
+    _display:none;
+}
+
+.icon:hover{
+    background-position: 0 -20px;
+}
+/**button轮廓线**/
+.s_btn_wr {
+    width: 97px;
+    height: 34px;
+    display: inline-block;
+    *position: relative;
+    z-index: 0;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+    *border-bottom: 0;
+}
+/**button**/
+.s_btn {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    padding-top: 2px\9;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    *border-bottom: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    cursor: pointer;
+}
+.s_btn:hover{
+    background:#317eF3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+/***这里可以配合js实现按钮的hover功能**/
+.s_btn.btnhover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    *border-bottom: 0;
+    box-shadow: 1px 1px 1px #ccc
+}
+
+.s_btn_h {
+    background: #3075dc;
+    box-shadow: inset 1px 1px 5px #2964bb;
+    -webkit-box-shadow: inset 1px 1px 5px #2964bb;
+    -moz-box-shadow: inset 1px 1px 5px #2964bb;
+    -o-box-shadow: inset 1px 1px 5px #2964bb;
+}
+
+input::-ms-clear {
+    display: none;
+}
+/*****************导航***********************/
+#u1 a:link,
+#u1 a:visited {
+    color: #666;
+    text-decoration: none
+}
+
+#u1 a:hover,
+#u1 a:active {
+    text-decoration: underline
+}
+
+#u1 a:active {
+    color: #00c
+}
+
+#u1 {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0
+}
+
+#u1 .reg {
+    display: none;
+}
+
+#u1 a.pf,
+#u1 a.pf:visited {
+    display: inline-block;
+    float: left;
+    color: #333;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+#u1 a.lb,
+#u1 a.lb:visited{
+    display: inline-block;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+#u1 a.bri,
+#u1 a.bri:visited {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+/****js实现hover功能**/
+#u1 a.bri.brihover {
+    display: none;
+    text-decoration: none;
+    color: #333;
+    background: 0;
+    border-bottom: 1px solid transparent;
+    margin-left: 19px;
+}
+/****js实现hover功能**/
+#u1 #lm a {
+    color: #00c;
+    text-decoration: underline;
+}
+
+#u1 a.mnav,
+#u1 a.mnav:visited {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+#u1 a.pf:hover,
+#u1 a.lb:hover,
+#u1 a.mnav:hover {
+    color: #00c;
+}
+
+
+/********************设置的弹窗********************/
+
+#set{
+    display: block;
+    position: absolute;
+    right: 75px;
+    top: 44px;
+    width: 70px;
+    height: auto;
+    border: 1px solid #eee;
+    z-index: 8;
+    background-color: #fff;
+    filter:drop-shadow(0 0 3px rgba(0,0,0,0.1));
+    -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,0.1));
+}
+#set{
+    display: none;
+}
+
+#set .white-horn{
+    z-index: 10;
+    margin: 0 auto;
+    float: left;
+    display: inline-block;
+    position: absolute;
+    top: -14px;
+    left: 28px;
+    width: 0px;
+    height: 0px;
+    border: 7px solid;
+    border-color: transparent transparent #fff transparent; 
+    overflow:hidden;
+    _border-color: tomato tomato #fff tomato;
+    _filter:chroma(color=tomato);
+}
+#set a{
+    display: block;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 22px;
+    padding: 0 4px;
+    color: #666;
+    font-size: 13px;
+}
+#set a:hover{
+    background-color: #2d78f4;
+    color: #fff;
+}
+
+/********************更多产品的的弹窗********************/
+
+/*.more_boxer{
+    width: 60px;
+    position: relative;
+}
+.more_boxer a[class='more']{
+    background-color: #3388FF;
+    color: #fff;
+    width: 100%;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 3px;
+}*/
+
+#more{
+    z-index: 50;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    width: 80px;
+    display: block;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    overflow: hidden;
+    background-color: #F9F9F9;
+}
+#more{
+    display: none;
+}
+#more .more2{
+    line-height: 53px;
+    width: 80%;
+    margin: 0 auto;
+    height: 45px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #f0f0f0;
+ }
+
+#more ul li{
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    position: relative;
+}
+#more  ul li a{
+    display: block;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 10px auto;
+    width: 80%;
+}
+#more ul li .last{
+    width: 100%;
+    border:none;
+}
+#more ul li a:not(.last){
+    text-decoration: none;
+}
+#more ul li a:hover{
+    text-decoration: underline;
+}
+#more ul span{
+    display: block;
+    margin: 0 auto;
+    background: url(../imgs/left_icons.png) no-repeat;
+    cursor: pointer;
+    _position: static;
+}
+
+#more  ul .bg1{
+    background-position: -72px -8px;
+    width: 40px;
+    height: 31px;
+    padding-top: 5px;
+}
+#more  ul .bg2{
+    background-position: -114px -4px;
+    width: 30px;
+    height: 31px;
+    padding-top: 5px;
+}       
+#more ul .bg3{
+    background-position: -36px 0;
+    width: 36px;
+    height: 36px;
+    padding-top: 5px;
+}
+#more  ul .bg4{
+    background-position: -152px 1px;
+    width: 30px;
+    height: 36px;
+    padding-top: 5px;
+}
+#more  ul .bg5{
+    background-position: -184px 0px;
+    width: 36px;
+    height: 35px;
+    padding-top: 5px;
+}
+#more a{
+    display: block;
+    width: 100%;
+    padding: 0 .3rem;
+}
+
+
+
+
+
